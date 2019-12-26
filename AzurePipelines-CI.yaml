@@ -9,7 +9,7 @@ pool:
   - task: Maven@3
     displayName: 'Maven app/pom.xml'
     inputs:
-      mavenPomFile: '$(Parameters.mavenPOMFile)'
+      mavenPomFile:  'app/pom.xml'
       codeCoverageToolOption: Cobertura
   
   - task: CopyFiles@2
